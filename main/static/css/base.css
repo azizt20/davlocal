@@ -1,0 +1,44 @@
+@charset "UTF-8";
+body {
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+
+.transishon {
+  transition: all 0.3s;
+}
+
+.bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trust .item {
+  display: flex;
+  justify-content: center;
+}
+.trust .item:nth-child(4n) {
+  justify-content: flex-end;
+}
+.trust .item:nth-child(4n+1) {
+  justify-content: flex-start;
+}
+
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.form .form-input {
+  height: 57px;
+}/*# sourceMappingURL=base.css.map */
