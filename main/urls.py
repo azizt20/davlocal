@@ -6,3 +6,22 @@ urlpatterns = [
     path('solutions/', solutions, name='solutions'),
     path('services/', services, name='services'),
 ]
+"""
+
+msgid "English"
+msgstr "Anglais"
+
+
+msgid "English"
+msgstr ""
+
+#: config/settings.py:134
+msgid "Russian"
+msgstr ""
+
+#: config/settings.py:135
+msgid "Uzbek"
+msgstr ""
+
+
+ """
