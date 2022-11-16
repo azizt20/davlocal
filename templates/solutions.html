@@ -105,8 +105,23 @@
 </section>
 
 
+<section class="container  mt-[60px] cards">
+    <div class="grid grid-cols-4 gap-5" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+        {% for solution in solutions %}
+            <div id="server-tab" data-tabs-target="#server" type="button" role="tab" aria-controls="server"
+                aria-selected="true"
+                class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
+                <img src="{{ solution.image.url }}" alt="" class="w-full h-auto rounded-t-[15px]">
+                <p class="p-5 pt-2.5 font-semibold text-lg">{{ solution.title }}</p>
+            </div>
+        {% endfor %}
+</section>
 
-
+<section class="container mt-10 text-lg" id="myTabContent">
+    {% for solution in solutions %}
+        <div class=" hidden" id="networker" role="tabpanel" aria-labelledby="soft-tab">{{ solution.body|safe }}</div>
+    {% endfor %}
+</section>
 
 <section class="mt-[123px] contact" id="contact">
     <div class="bg-primary h-[550px] w-full">
@@ -115,15 +130,14 @@
             <p class="text-center text-[20px] font-normal mt-5 w-1/3 mx-auto text-white">Have a question or just want to
                 say hi? Don’t
                 bother, we'd love to hear from you.</p>
-
             <form class=" form rounded-[15px] bg-white shadow-form border-[1.5px] border-[#90a3bf40]  mt-[60px]">
+                {% csrf_token %}
                 <div class="px-[65px] py-[44px] grid grid-cols-2 gap-x-[78px] gap-y-[44px]">
                     <label for="full-name">
                         <div class="flex font-semibold text-lg">
                             Name <span class="text-red">&#9913;</span>
                         </div>
-                        <input id="full-name" name="fullname" type="text" placeholder="Your full name"
-                            class="w-full form-input px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text">
+                        {{ form.name }}
                     </label>
 
                     <label for="email">
@@ -138,34 +152,22 @@
                         <div class="flex font-semibold text-lg">
                             Phone <span class="text-red">&#9913;</span>
                         </div>
-                        <div class="flex mt-[14px] relative">
-                            <div
-                                class="flex font-medium rounded-l-xl border-0 px-[22px] absolute top-0 text-lg text-black form-input items-center justify-center bg-white-grey border-r border-[#EAEAEA]">
-                                <img src="{% static 'imgs/uzb.png' %}" alt="" class="">
-                                <span class="ml-3">+998</span>
-                            </div>
-                            <input id="number" type="number" name="phone" placeholder="Your phone number"
-                                class="w-full form-input pl-[140px] py-4 rounded-xl text-lg  bg-white-grey border-0 placeholder:text">
-
-                        </div>
+                            {{ form.phone_number.errors }}
+                            {{ form.phone_number }}
                     </label>
 
                     <label for="Subject">
                         <div class="flex font-semibold text-lg">
                             Subject <span class="text-red">&#9913;</span>
                         </div>
-
-                        <input id="Subject" type="text" name="subject" placeholder="Subject"
-                            class="w-full form-input px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text">
+                        {{ form.subject }}
                     </label>
 
                     <label for="Subject" class="col-span-2 ">
                         <div class="flex font-semibold text-lg">
                             Message <span class="text-red">&#9913;</span>
                         </div>
-                        <textarea id="Message" type="text" name="Message" placeholder="Write your message"
-                            class="w-full  px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text"
-                            rows="4"></textarea>
+                        {{ form.message }}
                     </label>
 
                     <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">Send</button>

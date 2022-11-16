@@ -41,18 +41,7 @@
         </div>
 
         <div class="font-normal">
-            Когда вы понимаете, что ИТ-инфраструктура вашего предприятия требует модернизации, это означает, что часть
-            сервисов и решений уже не отвечают текущим требованиям. Но воздержитесь от немедленной закупки нового
-            оборудования, затраты могут быть неоправданно высоки, а результат далек от заявленных целей.
-
-            <div class="mt-10 mb-[14px] font-bold">
-                Для внедрения новых программно-аппаратных ресурсов нужен глубокий аудит вашей ИТ-инфраструктуры:
-            </div>
-            - обследование ИТ – это сбор всей доступной информации о текущем состоянии. Грамотно собранная информация
-            позволит принять верные решения по эффективной модернизации;
-            - аудит критериев ИТ – анализ полученной информации и выдача рекомендаций по отдельным критериям:
-            безопасность, производительность, надежность, доступность и другим. При этом исследуются не только отдельные
-            элементы инфраструктуры, но и вся совокупность программных и аппаратных средств.
+            {{ service.body|safe }}
         </div>
     </div>
 </section>
@@ -163,59 +152,23 @@
                 say hi? Don’t
                 bother, we'd love to hear from you.</p>
 
-            <form class=" form rounded-[15px] bg-white shadow-form border-[1.5px] border-[#90a3bf40]  mt-[60px]">
+            <form method="post" class=" form rounded-[15px] bg-white shadow-form border-[1.5px] border-[#90a3bf40]  mt-[60px]">
+                {% csrf_token %}
                 <div class="px-[65px] py-[44px] grid grid-cols-2 gap-x-[78px] gap-y-[44px]">
-                    <label for="full-name">
+                    {% for field in form %}
+                        <label for="{{ field.name }}" class="{% if field.name == 'message' %}col-span-2 {% endif %}">
+    
                         <div class="flex font-semibold text-lg">
-                            Name <span class="text-red">&#9913;</span>
+                            {{ field.label }} <span class="text-red">&#9913;</span>
                         </div>
-                        <input id="full-name" name="fullname" type="text" placeholder="Your full name"
-                            class="w-full form-input px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text">
-                    </label>
+                        {% for error in field.errors %}
+                            <p> {{ error }} </p>
+                        {% endfor %}
+                        {{ field }}
+                        </label>
+                    {% endfor %}
 
-                    <label for="email">
-                        <div class="flex font-semibold text-lg">
-                            Email <span class="text-red">&#9913;</span>
-                        </div>
-                        <input id="email" name="email" type="email" placeholder="Your email"
-                            class="w-full form-input px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text">
-                    </label>
-
-                    <label for="number">
-                        <div class="flex font-semibold text-lg">
-                            Phone <span class="text-red">&#9913;</span>
-                        </div>
-                        <div class="flex mt-[14px] relative">
-                            <div
-                                class="flex font-medium rounded-l-xl border-0 px-[22px] absolute top-0 text-lg text-black form-input items-center justify-center bg-white-grey border-r border-[#EAEAEA]">
-                                <img src="{% static 'imgs/uzb.png' %}" alt="" class="">
-                                <span class="ml-3">+998</span>
-                            </div>
-                            <input id="number" type="number" name="phone" placeholder="Your phone number"
-                                class="w-full form-input pl-[140px] py-4 rounded-xl text-lg  bg-white-grey border-0 placeholder:text">
-
-                        </div>
-                    </label>
-
-                    <label for="Subject">
-                        <div class="flex font-semibold text-lg">
-                            Subject <span class="text-red">&#9913;</span>
-                        </div>
-
-                        <input id="Subject" type="text" name="subject" placeholder="Subject"
-                            class="w-full form-input px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text">
-                    </label>
-
-                    <label for="Subject" class="col-span-2 ">
-                        <div class="flex font-semibold text-lg">
-                            Message <span class="text-red">&#9913;</span>
-                        </div>
-                        <textarea id="Message" type="text" name="Message" placeholder="Write your message"
-                            class="w-full  px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text"
-                            rows="4"></textarea>
-                    </label>
-
-                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">Send</button>
+                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2" type="submit" >Send</button>
                 </div>
             </form>
         </div>
