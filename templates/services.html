@@ -5,23 +5,23 @@
 
 <section class="breadcrumb container mt-5 flex text-lg">
     <div class="simple flex  items-center font-normal opacity-70">
-        Главная
+        {% translate "Главная" %}
         <svg width="24" height="24" class="ml-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.5 5L15.5 12L8.5 19" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round"
                 stroke-linejoin="round" />
         </svg>
     </div>
-    <div class="last text-primary font-bold ">Наши услуги</div>
+    <div class="last text-primary font-bold ">{% translate "Наши услуги" %}</div>
 </section>
 
 <section class="mt-9 container audit">
     <div class="font-bold text-[42px] w-1/2">
-        Аудит ИТ-инфраструктуры
+        {% translate "Аудит ИТ-инфраструктуры" %}
     </div>
 
     <div class="mt-[22px] font-normal w-1/3">
-        Технические эксперты Dav Local проведут аудит серверной или физической ИТ-инфраструктуры вашей компании и дадут
-        рекомендации по развитию и поддержке вашей инфраструктуры.
+        {% translate "Технические эксперты Dav Local проведут аудит серверной или физической ИТ-инфраструктуры вашей компании и дадут
+        рекомендации по развитию и поддержке вашей инфраструктуры." %}
     </div>
 
     <img src="{% static 'imgs/services_banner.png'%}" alt="" class=" mt-8 w-full h-auto">
@@ -48,7 +48,7 @@
 
 <section class="mt-[170px] bg-primary pt-10 pb-[76px]">
     <div class="container text-white">
-        <div class="title text-center text-[36px] font-bold">КАТЕГОРИИ ОБЪЕКТОВ АУДИТА</div>
+        <div class="title text-center text-[36px] font-bold">{% translate "КАТЕГОРИИ ОБЪЕКТОВ АУДИТА" %}</div>
 
         <div class="grid grid-cols-5 mt-[70px]">
 
@@ -67,7 +67,7 @@
                         </defs>
                     </svg>
                 </div>
-                Серверное оборудование
+                {% translate "Серверное оборудование" %}
             </div>
 
 
@@ -86,7 +86,7 @@
                     </svg>
 
                 </div>
-                Системы хранения данных
+                {% translate "Системы хранения данных" %}
             </div>
 
             <div class="flex  font-semibold items-center w-3/4 col-start-5">
@@ -104,7 +104,7 @@
                     </svg>
 
                 </div>
-                Оргтехника
+                {% translate "Оргтехника" %}
 
             </div>
         </div>
@@ -112,32 +112,32 @@
 </section>
 
 <section class="container  mt-[116px] cards">
-    <div class="font-bold text-[42px] text-center">ОБЪЕМ РАБОТ ПО АУДИТУ</div>
+    <div class="font-bold text-[42px] text-center">{% translate "ОБЪЕМ РАБОТ ПО АУДИТУ" %}</div>
     <div class="grid grid-cols-4 gap-5 mt-10">
 
 
         <div
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/audit1.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-2.5 font-semibold text-lg">Инвентаризация оборудования</p>
+            <p class="p-5 pt-2.5 font-semibold text-lg">{% translate "Инвентаризация оборудования" %}</p>
         </div>
 
         <div
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/audit2.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-2.5 font-semibold text-lg">Оценка и фиксация текущего технического состояния объектов аудита</p>
+            <p class="p-5 pt-2.5 font-semibold text-lg">{% translate "Оценка и фиксация текущего технического состояния объектов аудита" %}</p>
         </div>
 
         <div
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/audit3.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-2.5 font-semibold text-lg">Выявление проблем и определение методов их решения </p>
+            <p class="p-5 pt-2.5 font-semibold text-lg">{% translate "Выявление проблем и определение методов их решения" %} </p>
         </div>
 
         <div
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/audit4.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-[18px] font-semibold text-lg">Выдача рекомендаций по техническому обслуживанию, ремонту или замене</p>
+            <p class="p-5 pt-[18px] font-semibold text-lg">{% translate "Выдача рекомендаций по техническому обслуживанию, ремонту или замене" %}</p>
         </div>
 
     </div>
@@ -147,17 +147,17 @@
 <section class="mt-[166px] contact" id="contact">
     <div class="bg-primary h-[550px] w-full">
         <div class="container">
-            <h3 class="text-[40px] text-white font-semibold pt-[65px] text-center">Contact us</h3>
-            <p class="text-center text-[20px] font-normal mt-5 w-1/3 mx-auto text-white">Have a question or just want to
+            <h3 class="text-[40px] text-white font-semibold pt-[65px] text-center">{% translate "Contact us" %}</h3>
+            <p class="text-center text-[20px] font-normal mt-5 w-1/3 mx-auto text-white">{% translate "Have a question or just want to
                 say hi? Don’t
-                bother, we'd love to hear from you.</p>
+                bother, we'd love to hear from you." %}</p>
 
             <form method="post" class=" form rounded-[15px] bg-white shadow-form border-[1.5px] border-[#90a3bf40]  mt-[60px]">
                 {% csrf_token %}
                 <div class="px-[65px] py-[44px] grid grid-cols-2 gap-x-[78px] gap-y-[44px]">
                     {% for field in form %}
                         <label for="{{ field.name }}" class="{% if field.name == 'message' %}col-span-2 {% endif %}">
-    
+
                         <div class="flex font-semibold text-lg">
                             {{ field.label }} <span class="text-red">&#9913;</span>
                         </div>
@@ -168,7 +168,7 @@
                         </label>
                     {% endfor %}
 
-                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2" type="submit" >Send</button>
+                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2" type="submit" >{% translate "Send" %}</button>
                 </div>
             </form>
         </div>
@@ -182,28 +182,28 @@
             <div class="font-black text-[36px] mb-2 ">
                 250+
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-3">
             <div class="font-black text-[36px] mb-2 ">
                 1 507
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-5">
             <div class="font-black text-[36px] mb-2 ">
                 210
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-7 ">
             <div class="font-black text-[36px] mb-2 ">
                 1 456
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
     </div>

@@ -13,17 +13,17 @@
                 stroke-linejoin="round" />
         </svg>
     </div>
-    <div class="last text-primary font-bold ">Готовые решения</div>
+    <div class="last text-primary font-bold ">{% translate "Готовые решения" %}</div>
 </section>
 
 <section class="mt-9 container">
     <div class="font-semibold text-lg w-1/2">
-        Компания Dev Local специализируется на решениях по построению ИТ-инфраструктуры для крупных коммерческих и
-        государственных компаний.
+        {% translate "Компания Dev Local специализируется на решениях по построению ИТ-инфраструктуры для крупных коммерческих и
+        государственных компаний." %}
     </div>
 
     <div class="mt-3 font-normal w-1/3">
-        Основными составляющими ИТ-инфраструктуры являются аппаратные и программные продукты.
+        {% translate "Основными составляющими ИТ-инфраструктуры являются аппаратные и программные продукты." %}
     </div>
 </section>
 
@@ -35,27 +35,27 @@
             aria-selected="true"
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/solution1.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-2.5 font-semibold text-lg">Серверное оборудование</p>
+            <p class="p-5 pt-2.5 font-semibold text-lg">{% translate "Серверное оборудование" %}</p>
         </div>
 
         <div id="memory-tab" data-tabs-target="#memory" type="button" role="tab" aria-controls="memory"
             aria-selected="false"
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/solution2.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-2.5 font-semibold text-lg">Системы хранения данных</p>
+            <p class="p-5 pt-2.5 font-semibold text-lg">{% translate "Системы хранения данных" %}</p>
         </div>
 
         <div id="networker-tab" data-tabs-target="#networker" type="button" role="tab" aria-controls="networker"
             aria-selected="false"
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/solution3.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-2.5 font-semibold text-lg">Сетевое оборудование</p>
+            <p class="p-5 pt-2.5 font-semibold text-lg">{% translate "Сетевое оборудование" %}</p>
         </div>
 
         <div id="soft-tab" data-tabs-target="#soft" type="button" role="tab" aria-controls="soft" aria-selected="false"
             class="cart transishon hover:cursor-pointer  hover:-translate-y-[25px] border border-[#90a3bf] hover:border-[1.5px] hover:border-primary rounded-[15px] bg-white">
             <img src="{% static 'imgs/solution4.png' %}" alt="" class="w-full h-auto rounded-t-[15px]">
-            <p class="p-5 pt-2.5 font-semibold text-lg">Програмное обеспечение</p>
+            <p class="p-5 pt-2.5 font-semibold text-lg">{% translate "Програмное обеспечение" %}</p>
         </div>
 
     </div>
@@ -63,42 +63,42 @@
 
 <section class="container mt-10 text-lg" id="myTabContent">
     <div class="" id="server" role="tabpanel" aria-labelledby="server-tab">
-        <span class="font-bold">Серверное оборудование</span> – Dev Local является мультивендорным системным
+        <span class="font-bold">{% translate "Серверное оборудование" %}</span>{% translate " – Dev Local является мультивендорным системным
         интегратором и занимается проектированием и
         построением ИТ-инфраструктуры предприятий, поставляя и внедряя у наших заказчиков не только серверы известных
         марок,
         но и системы хранения данных, сетевое оборудование, инженерную инфраструктуру и средства информационной
-        безопасности.
+        безопасности." %}
         <br>
         <br>
-        Комплексный подход компании Тринити обеспечивается глубокой экспертизой наших инженеров и многолетними
-        партнерскими отношениями с производителями аппаратного и программного обеспечения.
+        {% translate "Комплексный подход компании Тринити обеспечивается глубокой экспертизой наших инженеров и многолетними
+        партнерскими отношениями с производителями аппаратного и программного обеспечения." %}
         <br>
         <br>
-        Сегодня мы можем предложить комплексные ИТ-решения для бизнеса любого масштаба и задач любой сложности.
+        {% translate "Сегодня мы можем предложить комплексные ИТ-решения для бизнеса любого масштаба и задач любой сложности." %}
     </div>
 
     <div class=" hidden" id="memory" role="tabpanel" aria-labelledby="memory-tab">
-        <span class="font-bold">Системы хранения данных</span> – Компания Dev Local является
+        <span class="font-bold">{% translate "Системы хранения данных" %}</span>{% translate " – Компания Dev Local является
         мультивендорным системным интегратором и занимается проектированием и построением ИТ-инфраструктуры, поставляя и
         внедряя системы хранения данных, серверное и сетевое оборудование, инженерную инфраструктуру, средства
-        информационной безопасности, управления и мониторинга.
+        информационной безопасности, управления и мониторинга." %}
 
     </div>
 
 
     <div class=" hidden" id="networker" role="tabpanel" aria-labelledby="networker-tab">
-        <span class="font-bold">Сетевое оборудование</span> – Компания Dev Local является
+        <span class="font-bold">{% translate "Сетевое оборудование" %}</span>{% translate " – Компания Dev Local является
         мультивендорным системным интегратором и занимается проектированием и построением ИТ-инфраструктуры, поставляя и
         внедряя сетевое оборудование, серверы и системы хранения данных, инженерную инфраструктуру, средства
-        информационной безопасности, управления и мониторинга.
+        информационной безопасности, управления и мониторинга." %}
 
     </div>
 
 
     <div class=" hidden" id="soft" role="tabpanel" aria-labelledby="soft-tab">
-        <span class="font-bold">Программное обеспечение</span> – Компания Dev Local является
-        мультивендорным системным интегратором и поставщиком лицензионного программного обеспечения.
+        <span class="font-bold">{% translate "Программное обеспечение" %}</span>{% translate " – Компания Dev Local является
+        мультивендорным системным интегратором и поставщиком лицензионного программного обеспечения." %}
 
     </div>
 
@@ -126,23 +126,23 @@
 <section class="mt-[123px] contact" id="contact">
     <div class="bg-primary h-[550px] w-full">
         <div class="container">
-            <h3 class="text-[40px] text-white font-semibold pt-[65px] text-center">Contact us</h3>
-            <p class="text-center text-[20px] font-normal mt-5 w-1/3 mx-auto text-white">Have a question or just want to
+            <h3 class="text-[40px] text-white font-semibold pt-[65px] text-center">{% translate "Contact us" %}</h3>
+            <p class="text-center text-[20px] font-normal mt-5 w-1/3 mx-auto text-white">{% translate "Have a question or just want to
                 say hi? Don’t
-                bother, we'd love to hear from you.</p>
+                bother, we'd love to hear from you." %}</p>
             <form class=" form rounded-[15px] bg-white shadow-form border-[1.5px] border-[#90a3bf40]  mt-[60px]">
                 {% csrf_token %}
                 <div class="px-[65px] py-[44px] grid grid-cols-2 gap-x-[78px] gap-y-[44px]">
                     <label for="full-name">
                         <div class="flex font-semibold text-lg">
-                            Name <span class="text-red">&#9913;</span>
+                            {% translate "Name" %} <span class="text-red">&#9913;</span>
                         </div>
                         {{ form.name }}
                     </label>
 
                     <label for="email">
                         <div class="flex font-semibold text-lg">
-                            Email <span class="text-red">&#9913;</span>
+                            {% translate "Email" %} <span class="text-red">&#9913;</span>
                         </div>
                         <input id="email" name="email" type="email" placeholder="Your email"
                             class="w-full form-input px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text">
@@ -150,7 +150,7 @@
 
                     <label for="number">
                         <div class="flex font-semibold text-lg">
-                            Phone <span class="text-red">&#9913;</span>
+                            {% translate "Phone" %} <span class="text-red">&#9913;</span>
                         </div>
                             {{ form.phone_number.errors }}
                             {{ form.phone_number }}
@@ -158,19 +158,19 @@
 
                     <label for="Subject">
                         <div class="flex font-semibold text-lg">
-                            Subject <span class="text-red">&#9913;</span>
+                            {% translate "Subject" %} <span class="text-red">&#9913;</span>
                         </div>
                         {{ form.subject }}
                     </label>
 
                     <label for="Subject" class="col-span-2 ">
                         <div class="flex font-semibold text-lg">
-                            Message <span class="text-red">&#9913;</span>
+                            {% translate "Message" %} <span class="text-red">&#9913;</span>
                         </div>
                         {{ form.message }}
                     </label>
 
-                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">Send</button>
+                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">{% translate "Send" %}</button>
                 </div>
             </form>
         </div>
@@ -184,28 +184,28 @@
             <div class="font-black text-[36px] mb-2 ">
                 250+
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-3">
             <div class="font-black text-[36px] mb-2 ">
                 1 507
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-5">
             <div class="font-black text-[36px] mb-2 ">
                 210
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-7 ">
             <div class="font-black text-[36px] mb-2 ">
                 1 456
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
     </div>

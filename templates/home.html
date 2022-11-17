@@ -34,13 +34,13 @@
     <button type="button" id="prev" class="hidden absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-            <span class="sr-only">Previous</span>
+            <span class="sr-only">{% translate "Previous" %}</span>
         </span>
     </button>
     <button type="button" id="next" class="hidden absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-            <span class="sr-only">Next</span>
+            <span class="sr-only">{% translate "Next" %}</span>
         </span>
     </button>
 </div>
@@ -48,12 +48,12 @@
     <div class="absolute grid grid-cols-2 top-0 left-1/2 h-full  -translate-x-1/2 z-40   container text-white">
 
         <div class="left-side pr-[300px] flex flex-col justify-center">
-            <h1 class="text-[42px] font-bold leading-tight">DAV Local – Системная интеграция от А до Я.</h1>
-            <p class="text-[16px] font-normal mt-3 leading-relaxed">DAV Local – системный интегратор и поставщик
+            <h1 class="text-[42px] font-bold leading-tight">{% translate "DAV Local – Системная интеграция от А до Я." %}</h1>
+            <p class="text-[16px] font-normal mt-3 leading-relaxed">{% translate "DAV Local – системный интегратор и поставщик
                 IT-решений, реализующий
-                высокотехнологичные проекты с учетом отраслевой специфики заказчика.</p>
+                высокотехнологичные проекты с учетом отраслевой специфики заказчика." %}</p>
             <a href="" class="flex mt-[26px]">
-                <div href="#" class="text-[16px] font-normal mr-2">ПОДРОБНЕЕ</div>
+                <div href="#" class="text-[16px] font-normal mr-2">{% translate "ПОДРОБНЕЕ" %}</div>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.43 18.07L20.5 12L14.43 5.92999" stroke="white" stroke-width="1.5"
                         stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
@@ -101,9 +101,9 @@
                     fill="#006A64" />
             </svg>
 
-            <h4 class="font-semibold text-lg mt-[30px]">Наши клиенты</h4>
+            <h4 class="font-semibold text-lg mt-[30px]">{% translate "Наши клиенты" %}</h4>
             <p class="mt-2.5 text-center text-sm">
-                Nulla interdum cursus vitae quis dolor magna arcu. Pharetra condimentum a vestibulum enim nisl ac.
+                {% translate "Nulla interdum cursus vitae quis dolor magna arcu. Pharetra condimentum a vestibulum enim nisl ac." %}
             </p>
 
         </a>
@@ -146,10 +146,10 @@
             </svg>
 
 
-            <h4 class="font-semibold text-lg mt-[30px]">Готовые решения</h4>
+            <h4 class="font-semibold text-lg mt-[30px]">{% translate "Готовые решения" %}</h4>
             <p class="mt-2.5 text-center text-sm">
-                Серверное оборудование, Системы хранения данных,
-                Сетевое оборудование, Програмное обеспечение.
+                {% translate "Серверное оборудование, Системы хранения данных,
+                Сетевое оборудование, Програмное обеспечение." %}
             </p>
 
         </a>
@@ -167,10 +167,10 @@
             </svg>
 
 
-            <h4 class="font-semibold text-lg mt-[30px]">Наши услуги</h4>
+            <h4 class="font-semibold text-lg mt-[30px]">{% translate "Наши услуги" %}</h4>
             <p class="mt-2.5 text-center text-sm">
-                Аудит ИТ Инфраструктуры, Консультирование, Разработка
-                " концепции и требований, Проектирование, монтаж, пусконаладка, Услуги демо-стенда.
+                {% translate "Аудит ИТ Инфраструктуры, Консультирование, Разработка
+                " концепции и требований, Проектирование, монтаж, пусконаладка, Услуги демо-стенда." %}
             </p>
 
         </a>
@@ -216,10 +216,10 @@
             </svg>
 
 
-            <h4 class="font-semibold text-lg mt-[30px]">Квалифицированные специалисты</h4>
+            <h4 class="font-semibold text-lg mt-[30px]">{% translate "Квалифицированные специалисты" %}</h4>
             <p class="mt-2.5 text-center text-sm">
-                Ipsum dolor sit amet, consectetur adipiscing elit. Id imperdiet elit, ipsuis varius. Pharetra
-                condivestibulum enim nisl ac.
+                {% translate "Ipsum dolor sit amet, consectetur adipiscing elit. Id imperdiet elit, ipsuis varius. Pharetra
+                condivestibulum enim nisl ac." %}
             </p>
 
         </div>
@@ -231,24 +231,24 @@
         <div>
             <div class="text w-3/4">
                 <h2 class="text-[42px] font-bold">
-                    Решения и продукты
+                    {% translate "Решения и продукты" %}
                 </h2>
                 <p class="font-normal mt-4">
-                    Подберём для вас оптимальное решение для построения и эксплуатации ИТ-инфраструктуры любой сложности
+                    {% translate "Подберём для вас оптимальное решение для построения и эксплуатации ИТ-инфраструктуры любой сложности" %}
                 </p>
                 <ul class="mt-9 list-disc pl-1 space-y-3">
                     <li>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        {% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %}
                     </li>
                     <li>
-                        Fermentum amet at in et massa ipsum. Et ultrices eu eget tellus bibendum nisi, vestibulum
-                        adipiscing.
+                        {% translate "Fermentum amet at in et massa ipsum. Et ultrices eu eget tellus bibendum nisi, vestibulum
+                        adipiscing." %}
                     </li>
                 </ul>
 
                 <button type="button" data-modal-toggle="defaultModal"
-                    class="bg-primary shadow-2xl text-white rounded-[10px] py-[18px] px-[56px] font-semibold text-[16px] mt-9">Contact
-                    Now</button>
+                    class="bg-primary shadow-2xl text-white rounded-[10px] py-[18px] px-[56px] font-semibold text-[16px] mt-9">{% translate "Contact
+                    Now" %}</button>
 
 
                 <div id="defaultModal" tabindex="-1" aria-hidden="true"
@@ -270,21 +270,21 @@
                                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                                             clip-rule="evenodd"></path>
                                     </svg>
-                                    <span class="sr-only">Close modal</span>
+                                    <span class="sr-only">{% translate "Close modal" %}</span>
                                 </button>
 
-                                <div class="text-center font-bold text-[36px] mt-[52px] mb-10">Подбор оборудования</div>
+                                <div class="text-center font-bold text-[36px] mt-[52px] mb-10">{% translate "Подбор оборудования" %}</div>
                                 <div class="px-[65px] py-[44px] grid grid-cols-2 gap-x-[78px] gap-y-[44px]">
                                     <label for="full-name">
                                         <div class="flex font-semibold text-lg">
-                                            Name <span class="text-red">&#9913;</span>
+                                            {% translate "Name" %} <span class="text-red">&#9913;</span>
                                         </div>
                                         {{ form.name }}
                                     </label>
 
                                     <label for="email">
                                         <div class="flex font-semibold text-lg">
-                                            Email <span class="text-red">&#9913;</span>
+                                            {% translate "Email" %} <span class="text-red">&#9913;</span>
                                         </div>
                                         {{ form.email }}
 
@@ -292,7 +292,7 @@
 
                                     <label for="number">
                                         <div class="flex font-semibold text-lg">
-                                            Phone <span class="text-red">&#9913;</span>
+                                            {% translate "Phone" %} <span class="text-red">&#9913;</span>
                                         </div>
                                         {{ form.phone_number.errors }}
                                         {{ form.phone_number }}
@@ -300,20 +300,20 @@
 
                                     <label for="Subject">
                                         <div class="flex font-semibold text-lg">
-                                            Subject <span class="text-red">&#9913;</span>
+                                            {% translate "Subject" %} <span class="text-red">&#9913;</span>
                                         </div>
                                         {{ form.subject }}
                                     </label>
 
                                     <label for="Subject" class="col-span-2 ">
                                         <div class="flex font-semibold text-lg">
-                                            Message <span class="text-red">&#9913;</span>
+                                            {% translate "Message" %} <span class="text-red">&#9913;</span>
                                         </div>
                                         {{ form.message }}
                                     </label>
 
                                     <button
-                                        class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">Send</button>
+                                        class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">{% translate "Send" %}</button>
                                 </div>
                             </form>
                             <!-- Modal footer -->
@@ -335,7 +335,7 @@
 </section>
 
 <section class="selection container mt-[250px]">
-    <h2 class="text-[42px] font-bold text-center">Подбор оборудования</h2>
+    <h2 class="text-[42px] font-bold text-center">{% translate "Подбор оборудования" %}</h2>
     <div class="grid grid-cols-10 mt-[47px] gap-5">
                                                      <!-- <div style="background: url('{% static 'logo.png' %}')"></div> -->
         <div class="col-span-4 bg-img rounded-l-xl" style="background-image: url('{% static 'imgs/selection1.png' %}')">
@@ -352,8 +352,8 @@
 </section>
 
 <section class="trust container pt-[155px]" id="trust">
-    <h2 class="text-[42px] font-bold text-center">Нам доверяют</h2>
-    <div class="text-center font-normal mt-4">Компании, которые выразили доверие к нам</div>
+    <h2 class="text-[42px] font-bold text-center">{% translate "Нам доверяют" %}</h2>
+    <div class="text-center font-normal mt-4">{% translate "Компании, которые выразили доверие к нам" %}</div>
     <div class="mt-[72px] grid grid-cols-4 gap-x-[140px] gap-y-[60px]">
 
         <div class="item">
@@ -443,24 +443,24 @@
 <section class="mt-[123px] contact" id="contact">
     <div class="bg-primary h-[550px] w-full">
         <div class="container">
-            <h3 class="text-[40px] text-white font-semibold pt-[65px] text-center">Contact us</h3>
-            <p class="text-center text-[20px] font-normal mt-5 w-1/3 mx-auto text-white">Have a question or just want to
+            <h3 class="text-[40px] text-white font-semibold pt-[65px] text-center">{% translate "Contact us" %}</h3>
+            <p class="text-center text-[20px] font-normal mt-5 w-1/3 mx-auto text-white">{% translate "Have a question or just want to
                 say hi? Don’t
-                bother, we'd love to hear from you.</p>
+                bother, we'd love to hear from you." %}</p>
 
             <form class=" form rounded-[15px] bg-white shadow-form border-[1.5px] border-[#90a3bf40]  mt-[60px]">
                 {% csrf_token %}
                 <div class="px-[65px] py-[44px] grid grid-cols-2 gap-x-[78px] gap-y-[44px]">
                     <label for="full-name">
                         <div class="flex font-semibold text-lg">
-                            Name <span class="text-red">&#9913;</span>
+                            {% translate "Name" %} <span class="text-red">&#9913;</span>
                         </div>
                         {{ form.name }}
                     </label>
 
                     <label for="email">
                         <div class="flex font-semibold text-lg">
-                            Email <span class="text-red">&#9913;</span>
+                            {% translate "Email" %} <span class="text-red">&#9913;</span>
                         </div>
                         <input id="email" name="email" type="email" placeholder="Your email"
                             class="w-full form-input px-4 py-4 rounded-xl text-lg mt-[14px] bg-white-grey border-0 placeholder:text">
@@ -468,7 +468,7 @@
 
                     <label for="number">
                         <div class="flex font-semibold text-lg">
-                            Phone <span class="text-red">&#9913;</span>
+                            {% translate "Phone" %} <span class="text-red">&#9913;</span>
                         </div>
                         {{ form.phone_number.errors }}
                         {{ form.phone_number }}
@@ -476,19 +476,19 @@
 
                     <label for="Subject">
                         <div class="flex font-semibold text-lg">
-                            Subject <span class="text-red">&#9913;</span>
+                            {% translate "Subject" %} <span class="text-red">&#9913;</span>
                         </div>
                         {{ form.subject }}
                     </label>
 
                     <label for="Subject" class="col-span-2 ">
                         <div class="flex font-semibold text-lg">
-                            Message <span class="text-red">&#9913;</span>
+                            {% translate "Message" %} <span class="text-red">&#9913;</span>
                         </div>
                         {{ form.message }}
                     </label>
 
-                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">Send</button>
+                    <button class="text-center bg-primary text-white py-[18px]  rounded-2xl col-span-2">{% translate "Send" %}</button>
                 </div>
             </form>
         </div>
@@ -502,28 +502,28 @@
             <div class="font-black text-[36px] mb-2 ">
                 250+
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-3">
             <div class="font-black text-[36px] mb-2 ">
                 1 507
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-5">
             <div class="font-black text-[36px] mb-2 ">
                 210
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
         <div class="text-center col-start-7 ">
             <div class="font-black text-[36px] mb-2 ">
                 1 456
             </div>
-            <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div>
+            <div class="text-sm">{% translate "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %} </div>
         </div>
 
     </div>
